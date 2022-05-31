@@ -16,8 +16,8 @@ public class ITempCoverterIml implements ITempConverter {
 
        TempConverterEndpointService ss = new TempConverterEndpointService();
        TempConverterEndpoint port = ss.getTempConverterEndpointPort();
-         CelsiusToFahrenheitRequest request = new CelsiusToFahrenheitRequest();
-         request.setTemperatureInCelsius(celsius);
+       CelsiusToFahrenheitRequest request = new CelsiusToFahrenheitRequest();
+       request.setTemperatureInCelsius(celsius);
        return port.celsiusToFahrenheit(request).getTemperatureInFahrenheit();
 
     }

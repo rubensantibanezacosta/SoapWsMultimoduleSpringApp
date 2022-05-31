@@ -1,6 +1,6 @@
 package org.rs.parent;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 public class TemperatureServiceImpl implements TemperatureService {
 

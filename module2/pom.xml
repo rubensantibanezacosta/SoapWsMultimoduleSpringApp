@@ -19,6 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <target.dir>${project.basedir}/dist</target.dir>
         <spring.version>2.6.7</spring.version>
     </properties>
 
@@ -40,6 +41,7 @@
             <groupId>org.rs.parent</groupId>
             <artifactId>module1</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- Maven central dependencies -->
@@ -59,6 +61,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.version}</version>
+                <configuration>
+
+
+                </configuration>
+
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <outputDirectory>${target.dir}</outputDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </build>
