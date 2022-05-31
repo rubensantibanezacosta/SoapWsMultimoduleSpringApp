@@ -1,9 +1,10 @@
 package org.rs.parent;
 
 
-import com.name.server.cxf.CelsiusToFahrenheitRequest;
-import com.name.server.cxf.TempConverterEndpoint;
-import com.name.server.cxf.TempConverterEndpointService;
+
+import com.rs.service.cxf.CelsiusToFahrenheitRequest;
+import com.rs.service.cxf.TempConverterEndpoint;
+import com.rs.service.cxf.TempConverterEndpointService;
 import org.springframework.stereotype.Service;
 
 @Service
